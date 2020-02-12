@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  background-image: url("./stars.jpg");
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: bottom;
 }
 
 .App-logo {
@@ -8,14 +12,18 @@
 }
 
 .App-header {
-  background-color: #222;
   height: 150px;
   padding: 20px;
-  color: white;
+  color:white;
+  font-size: 3rem;
 }
 
 .App-title {
   font-size: 1.5em;
+  font-family: cursive;
+  font-style: oblique;
+  font-variant: small-caps;
+  font-stretch: expanded;
 }
 
 .App-intro {
@@ -26,3 +34,48 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+table {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding:20px;
+  color: azure;
+  font-family: cursive  ;
+  font-style: oblique;
+}
+table img {
+  width: 60px;
+  height: 90px;
+}
+
+th {
+  padding:0 15px;
+  font-size: 18px;
+}
+thead {
+  background-color: rgb(34, 34, 34);;
+}
+#root > div > table > tbody > tr:nth-child(1) > td:nth-child(4){
+  padding:0 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  
+}
+
+.buttons :nth-child(n){
+  margin: 0 20px;
+  color: white;
+  background-color: rgb(34, 34, 34);
+  border-color: rgb(34,34,34);
+  padding: 10px 20px ;
+  border-radius: 10px;
+}
+
+tbody {
+  background-color: rgba(0, 0, 0, 0.514);
+}
+
